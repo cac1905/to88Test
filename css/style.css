@@ -64,6 +64,9 @@ body {
 	width: 960px;
 	margin: 0 auto;
 }
+main.content {
+	width: 100%;
+}
 .filter {  
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -75,9 +78,10 @@ body {
 HEADER
 ******************/
 .header {
-	background-color: #cf271e;
-	width: 100%;
+	background-color: #cf271e; 
 	height: 80px; 
+	width: 100%;
+	min-width: 960px;
 } 
 .header-top h1,
 .header-top .btn-register,
@@ -182,6 +186,7 @@ HEADER
 .nav {
 	background-color: #2a2a2a;
 	height: 40px;
+	min-width: 960px;
 } 
 .nav .home a { 
     background: url(../images/ico-home.png) no-repeat center 6px;
@@ -328,6 +333,7 @@ HEADER
 	background: #474747;
 	border: 1px solid #777;
 	font-size: 12px;
+	min-width: 960px;
 }
 .announcement .title {
 	background: url(../images/ico-announcement.gif) no-repeat left center;
@@ -504,6 +510,8 @@ center of index.html
 }
 .area-bottom {
 	background: #171717;
+	width: 100%;
+	min-width: 960px;
 }
 .area-bottom .left,
 .area-bottom .right {
@@ -1105,6 +1113,8 @@ FOOTER
 	height: 42px; 
 	border:1px solid #de6b65;
 	position: relative;
+	width: 100%;
+	min-width: 960px;
 }
 .footer-nav .oldMan {
 	position: absolute;
