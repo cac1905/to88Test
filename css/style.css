@@ -224,6 +224,7 @@ HEADER
 /*margin-top:-80px;*/
 	height: 255px;
 	position: relative;
+	min-width: 960px;
 }
 
 .wy-mod-banner .banners {
