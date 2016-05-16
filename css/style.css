@@ -220,11 +220,9 @@ HEADER
 }
 /** 轮播图css **/
 .wy-mod-banner {
-	background: #a51e00;
-/*margin-top:-80px;*/
+	background: #a51e00; 
 	height: 255px;
-	position: relative;
-	min-width: 960px;
+	position: relative; 
 }
 
 .wy-mod-banner .banners {
@@ -692,18 +690,19 @@ center of index.html
 /*右侧在线帮助*/ 
 #sideRight {
 	width: 170px;
-	height: 280px;
+	height: 190px;
 	position: fixed;
 	right: -130px;
 	top: 100px;
 	background: #ccc;
-	z-index: 10;
-	border: 1px solid red;
+	z-index: 10; 
+	background: url(../images/bg-chat.png) no-repeat;
 }
 
 #sideRight .info {
+	background: #ccc;
 	width: 130px;
-	height: 280px;
+	height: 190px;
 	float: right;
 	overflow: hidden;
 	text-align: center;
