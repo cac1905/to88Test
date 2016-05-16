@@ -18,7 +18,7 @@ table{border-collapse:collapse;border-spacing:0;}
 *{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 
  @font-face { 
-	font-family:aaIIziW5; 
+	font-family:hkw5; 
 	src: url('../fonts/华康娃娃体W5.TTF'); 
 	src: url('../fonts/华康娃娃体W5.eot?#iefix') format('embedded-opentype'),  
 		 url('../fonts/华康娃娃体W5.woff') format('woff'),
@@ -93,7 +93,7 @@ HEADER
 .header-top .btn-login a {
 	text-align: center;
 	text-shadow: 0px -1px #bbb,0 1px #fff;
-	font-family: 'aaIIziW5';
+	font-family: 'hkw5';
 	display: block;
 }
 .header-top .btn-register{
@@ -203,7 +203,7 @@ HEADER
 	line-height: 40px;
 	text-align: center;
 	display: block;
-	font-family: 'aaIIziW5';
+	font-family: 'hkw5';
 	font-size: 20px;
 }
 .nav .home a{
@@ -333,7 +333,7 @@ HEADER
 	background: url(../images/ico-announcement.gif) no-repeat left center;
 	padding-left: 22px;
     float:left;
-	font-family: 'aaIIziW5';
+	font-family: 'hkw5';
     color: #cacaca;
     line-height: 35px;
     text-align: right;
@@ -350,7 +350,7 @@ HEADER
 	border: 1px solid #e60909;
 	padding: 0 15px;
 	float: right;
-	font-family: 'aaIIziW5';
+	font-family: 'hkw5';
 	color: #fff;
     line-height: 35px;
     text-align: right;
