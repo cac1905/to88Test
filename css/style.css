@@ -18,26 +18,19 @@ table{border-collapse:collapse;border-spacing:0;}
 *{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 iframe{overflow: visible;}
  @font-face { 
-	font-family:DFPWaWa-B5; 
-	src: url('../fonts/华康娃娃体W5.TTF'); 
+	font-family:'DFPWaWa-B5'; 
+	src: url('../fonts/DFPWaWaW5-GB Regular.TTF'); 
+}  
+@font-face {
+    font-family: 'dfpwawaw5-gbregular';
+    src: url('../fonts/w5DFPWaWaW5-GB Regular.eot');
+    src: url('../fonts/w5DFPWaWaW5-GB Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/w5DFPWaWaW5-GB Regular.woff2') format('woff2'),
+         url('../fonts/w5DFPWaWaW5-GB Regular.woff') format('woff'),
+         url('../fonts/w5DFPWaWaW5-GB Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 } 
-/* @font-face { 
-	font-family:DFPWaWa-B5; 
-	src: url('../fonts/DFPWaWa-B5.TTC'); 
-	src: url('../fonts/DFPWaWa-B5.eot?#iefix') format('embedded-opentype'),  
-		 url('../fonts/DFPWaWa-B5.woff') format('woff'),
-		 url('../fonts/DFPWaWa-B5.ttf')  format('truetype'), 
-		 url('../fonts/DFPWaWa-B5.svg#../fonts/DFPWaWa-B5') format('svg');
-} */
-@font-face { 
-	font-family:RTWSYueGoTrial Regular; 
-	src: url('../fonts/RTWSYueGoRTWSYueGoTrial-Regular-Regular.otf'); 
-	src: url('../fonts/RTWSYueGoRTWSYueGoTrial-Regular-Regular.eot?#iefix') format('embedded-opentype'),  
-		 url('../fonts/RTWSYueGoRTWSYueGoTrial-Regular-Regular.woff') format('woff'),
-		 url('../fonts/RTWSYueGoRTWSYueGoTrial-Regular-Regular.ttf')  format('truetype'), 
-		 url('../fonts/RTWSYueGoRTWSYueGoTrial-Regular-Regular.svg#../fonts/RTWSYueGoRTWSYueGoTrial-Regular-Regular') format('svg');
-} 
-
 .clearfix:after{
 	content:".";
 	display:block;
@@ -101,7 +94,7 @@ HEADER
 .header-top .btn-login a {
 	text-align: center;
 	text-shadow: 0px -1px #bbb,0 1px #fff;
-	font-family: 'DFPWaWa-B5';
+	font-family: 'DFPWaWa-B5',dfpwawaw5-gbregular;
 	display: block;
 }
 .header-top .btn-register{
@@ -273,8 +266,8 @@ HEADER
     padding-right: 12px;
 }
 .header-top .btn-deposit a {
-	font: 24px/1 'DFPWaWa-B5';
-    color: #2a2a2a;
+	font: 24px/1 'DFPWaWa-B5',dfpwawaw5-gbregular;
+	color: #2a2a2a;
     text-align: center;
     text-shadow: 0px -1px #bbb,0 1px #fff;
     display: inline-block;
@@ -332,7 +325,7 @@ HEADER
 	line-height: 40px;
 	text-align: center;
 	display: block;
-	font-family: 'DFPWaWa-B5';
+	font-family: 'DFPWaWa-B5',dfpwawaw5-gbregular;
 	font-size: 20px;
 }
 .nav .home a{
@@ -463,7 +456,7 @@ HEADER
 	background: url(../images/ico-announcement.gif) no-repeat left center;
 	padding-left: 22px;
     float:left;
-	font-family: 'DFPWaWa-B5';
+	font-family: 'DFPWaWa-B5',dfpwawaw5-gbregular;
     color: #cacaca;
     line-height: 35px;
     text-align: right;
@@ -480,7 +473,7 @@ HEADER
 	border: 1px solid #e60909;
 	padding: 0 15px;
 	float: right;
-	font-family: 'DFPWaWa-B5';
+	font-family: 'DFPWaWa-B5',dfpwawaw5-gbregular;
 	color: #fff;
     line-height: 35px;
     text-align: right;
@@ -1296,8 +1289,7 @@ FOOTER
 	background: url(../images/bg-footer.jpg) repeat;
 	width: 100%;
 	min-height: 500px;
-    min-width: 960px;
-	font-family: 'RTWSYueGoTrial Regular'; 
+    min-width: 960px; 
 } 
 .footer-info .redLine { 
 	border-bottom: 20px solid #cf271e; 
