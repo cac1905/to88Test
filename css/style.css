@@ -536,10 +536,11 @@ center of index.html
 ********************/
 /*奖池数字滚动的CSS可调整样式*/
 .mt-number-animate { 
-	overflow: hidden;
+	/*overflow: hidden;*/
 	display: inline-block;
 	*display: inline-block;
 	position: relative;
+	height: 90px;
 }
 
 .mt-number-animate .mt-number-animate-dot {
@@ -555,17 +556,14 @@ center of index.html
 	text-align: center;
 	float: left;
 	position: relative;
-	top: 0;
+	top: 0; 
 }
 
 .mt-number-animate .mt-number-animate-dom .mt-number-animate-span {
 	width: 100%;
 	float: left;
 }
- 
-.content .area-top {
-	
-}
+  
 .area-top .jackpot {
 	margin:  5px 0;
 	background: url(../images/jackpot.png) no-repeat;
@@ -574,11 +572,17 @@ center of index.html
 }
 .area-top .jackpot span {
 	font: 52px/85px 'Arial';
-    display: block;
+    display: block; 
     color: #fff;
     text-align: right;
     height: 90px;
     padding-right: 40px;
+    position: relative;
+}
+.jackpot .numberRun {
+	float: right;
+	height: 90px;
+	overflow: hidden;
 }
 .home.area-top li {
 	float: left;
