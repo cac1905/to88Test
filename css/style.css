@@ -285,8 +285,17 @@ HEADER
 }
 .nav {
 	background-color: #2a2a2a;
+    background: url(../images/bg-nav.png) repeat;
 	height: 40px;
 	min-width: 960px;
+	position: static;
+	width: 100%;
+	z-index: 10; 
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 } 
 .nav .home a { 
     background: url(../images/ico-home.png) no-repeat center 6px;
@@ -294,7 +303,8 @@ HEADER
     padding: 0 30px;
 	text-align: center;
 }
-.nav .home a:hover {
+.nav .home a:hover,
+.nav .home a:active {
 	background-position:  center -25px;
 	background-color: #666;  
 	height: 40px; 
@@ -314,7 +324,8 @@ HEADER
 .nav .home a{
 	font-size: 0;
 }
-.nav li a:hover {
+.nav li a:hover,
+.nav li a:active {
 	background-color: #666; 
 	color: #ff0000;
 }
@@ -1203,7 +1214,7 @@ center of slot.html
 	transition: all 1.5s ease;
 }
 #loadMore:hover {
-    color:#ccc;
+    color:#2a2a2a;
 } 
 
 
