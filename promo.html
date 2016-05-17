@@ -74,7 +74,7 @@
 	    <div class="announcement">
 	    	<div class="main clearfix">
 	    		<p class="title">公告区：</p>
-		    	<div id="scrollDiv" class="clearfix">
+	    		<div id="scrollDiv" class="clearfix">
 	    			<ul>
 			           <li>0.5%离线存款红利通知</li>
 			           <li>高达125%返水无需申请</li>
@@ -574,15 +574,23 @@
 	    	</ul>
 	    	<p class="redLine"></p>
 	    </div>
-    </footer>
-    <!-- backTop -->
-    <p id="back-to-top"><a href="#" title="返回顶部"><span></span></a></p>
+    </footer> 
+     
  
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/myScript.js"></script>
 <script type="text/javascript" src="js/jackpotMoney.js"></script>
 <script type="text/javascript" src="js/jq_scroll.js"></script>
- 
+ <script>
+	$(function(){
+		$('.nav').posfixed({
+			distance : 0,
+			pos : 'top',
+			type : 'while',
+			hide : false
+		}); 
+	}); 
+</script>
 </script>
   </body>
 </html>

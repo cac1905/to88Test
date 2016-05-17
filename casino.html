@@ -74,7 +74,7 @@
 	    <div class="announcement">
 	    	<div class="main clearfix">
 	    		<p class="title">公告区：</p>
-		    	<div id="scrollDiv" class="clearfix">
+	    		<div id="scrollDiv" class="clearfix">
 	    			<ul>
 			           <li>0.5%离线存款红利通知</li>
 			           <li>高达125%返水无需申请</li>
@@ -89,7 +89,6 @@
 		    </div>
 	    </div>
     </header>
- 
     <main class="content"> 
     	<div class="casino area-top main">
     		<p class="jackpot"><span class="numberRun"></span></p>
@@ -227,6 +226,15 @@
 <script type="text/javascript" src="js/myScript.js"></script>
 <script type="text/javascript" src="js/jackpotMoney.js"></script>
 <script type="text/javascript" src="js/jq_scroll.js"></script> 
- 
+ <script>
+	$(function(){
+		$('.nav').posfixed({
+			distance : 0,
+			pos : 'top',
+			type : 'while',
+			hide : false
+		}); 
+	}); 
+</script>
   </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1, user-scalable=no"> 
  
 <title>通盈娱乐</title> 
 <link rel="stylesheet" href="css/style.css">  
@@ -12,7 +12,8 @@
 </head>
 
 <body>
-	<header>
+	  
+ 	<header>
 		<div class="header"> 
 			<div class="header-top main clearfix"> 		
 	    		<h1><a href="#"><img src="images/logo.png" alt="to88 logo"></a></h1>
@@ -89,7 +90,7 @@
 		    </div>
 	    </div>
     </header>
- 
+
     <main class="content"> 
     	<div class="home area-top main">
     		<p class="jackpot"><span class="numberRun"></span></p>
@@ -302,6 +303,16 @@
 <script type="text/javascript" src="js/myScript.js"></script>
 <script type="text/javascript" src="js/jackpotMoney.js"></script>
 <script type="text/javascript" src="js/jq_scroll.js"></script>
-
+<script type="text/javascript" src="js/posfixed.js"></script>
+<script>
+	$(function(){
+		$('.nav').posfixed({
+			distance : 0,
+			pos : 'top',
+			type : 'while',
+			hide : false
+		}); 
+	}); 
+</script>
   </body>
 </html>
