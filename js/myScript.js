@@ -93,6 +93,89 @@ $(function(){
      $("#scrollDiv").Scroll({line:1,speed:1000,timer:2000,up:"but_up",down:"but_down"});
      $("#hotGmes").Scroll({line:1,speed:500,timer:3000});
  
+     /*header after login account*/
+     $(".account span").click(function(){
+        $(".account ul").slideToggle();
+        $(".account ul").css("opacity","100");
+        $(".account ul").css("filter","alpha(opacity=100)"); 
+            $(".account span").css("background-image","url(../images/ico-sanjiao-up.gif) no-repeat 82px 13px");
+        });
+
+     /* nav fixed top 顶部导航固定*/
+     $.extend($.fn, {
+        posfixed: function(configSettings){
+            var settings = {
+                direction:"top",
+                type:"while",
+                hide:false,
+                distance:0
+            };          
+            $.extend(settings, configSettings);
+
+            //initial
+            if($.browser.msie&&$.browser.version==6.0){
+                $("html").css("overflow","hidden");
+                $("body").css({
+                    height:"100%",
+                    overflow:"auto"
+                });
+            }
+            
+            var obj = this;
+            var initPos = $(obj).offset().top;
+            var initPosLeft = $(obj).offset().left;
+            var anchoredPos = settings.distance;
+
+            if(settings.type=="while"){
+                if($.browser.msie&&$.browser.version==6.0){
+                    $("body").scroll(function(event) {
+                        var objTop = $(obj).offset().top - $("body").scrollTop();
+                        if(objTop<=settings.distance){
+                            $(obj).css("position","absolute");
+                            $(obj).css("top",settings.distance+"px");
+                            $(obj).css("left",initPosLeft+"px");
+                        }
+                        if($(obj).offset().top<=initPos){                       
+                            $(obj).css("position","static");
+                        }
+                    });
+                    
+                }else{
+                    $(window).scroll(function(event) {
+
+                        if(settings.direction == "top"){
+                            var objTop = $(obj).offset().top - $(window).scrollTop();
+                        
+                            if(objTop<=settings.distance){
+                                $(obj).css("position","fixed");
+                                $(obj).css(settings.direction,settings.distance+"px");
+                                
+                            }
+                            if($(obj).offset().top<=initPos){
+                                $(obj).css("position","static");
+                            }
+                        }else{
+                            var objBottom = $(window).height() - $(obj).offset().top + $(window).scrollTop() - $(obj).outerHeight() ;
+                            
+                            if(objBottom<=settings.distance){
+                                
+                                $(obj).css("position","fixed");
+                                $(obj).css(settings.direction,settings.distance+"px");
+                                
+                            }
+                            if($(obj).offset().top>=initPos){
+                                $(obj).css("position","static");
+                            }
+                        }
+                        
+
+
+                    });
+                }
+            } 
+        } 
+    });
+
 
 
 }); /** jquery end **/
