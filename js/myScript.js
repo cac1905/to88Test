@@ -96,10 +96,9 @@ $(function(){
      /*header after login account*/
      $(".account span").click(function(){
         $(".account ul").slideToggle();
-        $(".account ul").css("opacity","100");
+        $(".account ul").css("opacity","100"); 
         $(".account ul").css("filter","alpha(opacity=100)"); 
-            $(".account span").css("background-image","url(../images/ico-sanjiao-up.gif) no-repeat 82px 13px");
-        });
+    });
 
      /* nav fixed top 顶部导航固定*/
      $.extend($.fn, {
