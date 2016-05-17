@@ -1361,12 +1361,12 @@ p#back-to-top a span{
     width:59px;
     margin-bottom:5px;
     /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
-    -moz-transition:background 1s;
-    -webkit-transition:background 1s;
-    -o-transition:background 1s;
+    -moz-transition:background .5s;
+    -webkit-transition:background .5s;
+    -o-transition:background .5s;
 }
 #back-to-top a:hover span{
-    background:transparent url(../images/backTop.gif) no-repeat;
+	background-position: 0 -61px;
 }
 
 
