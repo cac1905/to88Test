@@ -71,7 +71,7 @@ body {
 main.content {
 	width: 100%;
 }
-.filter {  
+a {
 	-webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -114,13 +114,24 @@ HEADER
 .header-top .btn-register a {
 	font-size: 28px;
 	color: #ff0000; 
+	position: relative;
+}
+.btn-register span {
+	color: #ff0000; 
+	display: inline-block;
+	position: absolute;
+    right: 42px;
+    top: -4px;
 }
 .header-top .btn-register a:hover {
 	color: #2a2a2a; 
 }
-.btn-register span {
+.header-top .btn-register a:hover > span {
 	color: #2a2a2a; 
-	margin-bottom: 5px;
+	right: 38px;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 .header-top .btn-login {
 	background: url(../images/btn-login.png) no-repeat; 
@@ -131,7 +142,7 @@ HEADER
 	padding-right: 5px; 
 }
 .header-top .btn-login a {
-	font-size: 24px;
+	font-size: 20px;
 	color: #2a2a2a; 
 }
 .header-top .btn-login a:hover {
@@ -198,7 +209,7 @@ HEADER
 	overflow: visible;
 }
 .account span {
-	background: #b4130f url(../images/ico-sanjiao-down.gif) no-repeat 82px 13px;
+	background: #b4130f url(../images/ico-sanjiao.png) no-repeat 82px 13px;
 	line-height: 30px;
 	height: 30px;
 	padding: 0 30px;
@@ -207,6 +218,9 @@ HEADER
 	border-radius: 5px;
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+}
+.account span:hover {
+	background-position:  82px -10px;
 }
 .account ul {
 	background: #fff;
@@ -613,7 +627,7 @@ center of index.html
 }
 .home.area-top .btn a {
 	color: #ef2530;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: '楷体',Microsoft Yahei;
 }
 .home.area-top .btn a:hover {
@@ -677,6 +691,9 @@ center of index.html
 	text-decoration:none;
 	display: inline-block;
 	color: #ffac00;
+}
+.hotGames .title a:hover {
+	color: #ff0000;
 }
 .hotGames .info .pic {
 	background: #262726;	
@@ -920,7 +937,9 @@ center of promo.html
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 }
-
+.promo .tabs a:hover{
+	color: #ff0000;
+}
 .promo .tabs_item {
 	padding: 15px 0px;
 	display: none;
@@ -1053,6 +1072,11 @@ center of slot.html
 	float: left; 
 	background: #fff;
 	margin-bottom: 25px;
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
 }
 .rem_left1 .sanjiao {
     position: absolute;
