@@ -38,7 +38,7 @@
   
     //设置DOM symbol:分割符号
     var setNumDom = function(arrStr){
-      var shtml = '$<div class="mt-number-animate">';
+      var shtml = '<div class="mt-number-animate">';
       for(var i=0,len=arrStr.length; i<len; i++){
         if(i != 0 && (len-i)%3 == 0 && setting.symbol != "" && arrStr[i]!="."){
           shtml += '<div class="mt-number-animate-dot">'+setting.symbol+'</div>'+nHtml.replace("{{num}}",arrStr[i]);
