@@ -2,7 +2,7 @@
 /*css reset*/
 body,header,footer,menu,div,dl,dt,dd,ul,ol,li,p,h1,h2,h3,h4,input,button,textarea,article,aside,details,figcaption,figure,hgroup,nav,section,a{margin:0;padding:0;}
 header,footer,article,section,nav,menu,hgroup{display:block;clear:all;}
-html{font-family:'Microsoft Yahei','Simsun',Arial,Helvetica,sans-serif;font-size:16px;font-size:62.5%;color:#303030;background-color:#edf1f4;min-width:320px;-webkit-text-size-adjust:none;}
+html{font-family:'Microsoft Yahei','Simsun',Arial,Helvetica,sans-serif;font-size:16px;font-size:62.5%;color:#303030;background-color:#fff;min-width:320px;-webkit-text-size-adjust:none;}
 ul,ol{list-style:none;}
 a{text-decoration:none;color:#2695ff;}
 img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
@@ -16,15 +16,19 @@ table{border-collapse:collapse;border-spacing:0;}
 .ellipsis{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .break{word-break:break-all;word-wrap:break-word;}
 *{-webkit-tap-highlight-color:rgba(0,0,0,0);}
-
+iframe{overflow: visible;}
  @font-face { 
-	font-family:hkw5; 
+	font-family:DFPWaWa-B5; 
 	src: url('../fonts/华康娃娃体W5.TTF'); 
-	src: url('../fonts/华康娃娃体W5.eot?#iefix') format('embedded-opentype'),  
-		 url('../fonts/华康娃娃体W5.woff') format('woff'),
-		 url('../fonts/华康娃娃体W5.ttf')  format('truetype'), 
-		 url('../fonts/华康娃娃体W5.svg#../fonts/华康娃娃体W5') format('svg');
 } 
+/* @font-face { 
+	font-family:DFPWaWa-B5; 
+	src: url('../fonts/DFPWaWa-B5.TTC'); 
+	src: url('../fonts/DFPWaWa-B5.eot?#iefix') format('embedded-opentype'),  
+		 url('../fonts/DFPWaWa-B5.woff') format('woff'),
+		 url('../fonts/DFPWaWa-B5.ttf')  format('truetype'), 
+		 url('../fonts/DFPWaWa-B5.svg#../fonts/DFPWaWa-B5') format('svg');
+} */
 @font-face { 
 	font-family:RTWSYueGoTrial Regular; 
 	src: url('../fonts/RTWSYueGoRTWSYueGoTrial-Regular-Regular.otf'); 
@@ -97,7 +101,7 @@ HEADER
 .header-top .btn-login a {
 	text-align: center;
 	text-shadow: 0px -1px #bbb,0 1px #fff;
-	font-family: 'hkw5';
+	font-family: 'DFPWaWa-B5';
 	display: block;
 }
 .header-top .btn-register{
@@ -183,6 +187,102 @@ HEADER
 	margin: 0 0 5px 5px; 
 	display: block;
 }
+.header-top .account{
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+	margin: 26px 0 0 40px;
+	position: relative;
+	z-index: 8;
+	overflow: visible;
+}
+.account span {
+	background: #b4130f url(../images/ico-sanjiao-down.gif) no-repeat 82px 13px;
+	line-height: 30px;
+	height: 30px;
+	padding: 0 30px;
+	display: block;
+	cursor: pointer;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.account ul {
+	background: #fff;
+	display: none;
+	opacity: 0;
+	filter: alpha(opacity=100);
+	position: absolute;
+	overflow: visible;
+    /*right: 40px;
+    top: 20px;*/
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.account li {
+	padding: 0 5px 0 24px;
+	line-height: 32px;
+	background: url(../images/ico-account.png) no-repeat;
+}
+.account li:hover  {
+	background: #ccc url(../images/ico-account.png) no-repeat; 
+}
+.account li a {
+	color: #666;
+	display: block;
+	padding: 0 10px;
+}
+.account li.myAccount { 
+	background-position: 10px 7px;
+}
+.account li.deposit { 
+	background-position: 10px -18px;
+}
+.account li.logout { 
+	background-position: 10px -44px;
+}
+.header-top .myAssets{
+	float: right;
+	margin-right: 30px;
+} 
+.header-top .btn-deposit{
+	float: right;
+	border-right: 1px solid #000;
+	background: url(../images/btn-deposit.png) no-repeat;
+    width: 166px; 
+    line-height: 48px;
+    margin-top: 20px; 
+    text-align: center;
+    padding-right: 12px;
+}
+.header-top .btn-deposit a {
+	font: 24px/1 'DFPWaWa-B5';
+    color: #2a2a2a;
+    text-align: center;
+    text-shadow: 0px -1px #bbb,0 1px #fff;
+    display: inline-block;
+}
+.header-top .btn-deposit a:hover {
+	color: #ff0000;
+}
+.header-top .myAssets,
+.header-top .checkAccount {
+    float: right;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+    margin-top: 22px;
+}
+.header-top .checkAccount {
+	border-left: 1px solid #ff6666;
+	padding-left: 12px;
+}
+.checkAccount a:hover {
+	color: #ff0000;
+}
 .nav {
 	background-color: #2a2a2a;
 	height: 40px;
@@ -208,7 +308,7 @@ HEADER
 	line-height: 40px;
 	text-align: center;
 	display: block;
-	font-family: 'hkw5';
+	font-family: 'DFPWaWa-B5';
 	font-size: 20px;
 }
 .nav .home a{
@@ -338,7 +438,7 @@ HEADER
 	background: url(../images/ico-announcement.gif) no-repeat left center;
 	padding-left: 22px;
     float:left;
-	font-family: 'hkw5';
+	font-family: 'DFPWaWa-B5';
     color: #cacaca;
     line-height: 35px;
     text-align: right;
@@ -355,7 +455,7 @@ HEADER
 	border: 1px solid #e60909;
 	padding: 0 15px;
 	float: right;
-	font-family: 'hkw5';
+	font-family: 'DFPWaWa-B5';
 	color: #fff;
     line-height: 35px;
     text-align: right;
@@ -1110,8 +1210,7 @@ FOOTER
 ******************/
 .footer-nav {
 	background-color: #cf271e;
-	height: 42px; 
-	border:1px solid #de6b65;
+	height: 42px;  
 	position: relative;
 	width: 100%;
 	min-width: 960px;
@@ -1158,6 +1257,7 @@ FOOTER
 	background: url(../images/bg-footer.jpg) repeat;
 	width: 100%;
 	min-height: 500px;
+    min-width: 960px;
 	font-family: 'RTWSYueGoTrial Regular'; 
 } 
 .footer-info .redLine { 
