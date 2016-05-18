@@ -18,11 +18,17 @@ $(function(){
         });
     });
 
-    /*右侧在线帮助*/
+    /*silder right mobile games*/
     $('#sideRight').hover(function(){
         $('#sideRight').stop().animate({right:'0px'},200);
     },function(){
-        $('#sideRight').stop().animate({right:'-130px'},200);
+        $('#sideRight').stop().animate({right:'-88px'},200);
+    });
+    /*silder right live help*/
+    $('#sideRight2').hover(function(){
+        $('#sideRight2').stop().animate({right:'0px'},200);
+    },function(){
+        $('#sideRight2').stop().animate({right:'-88px'},200);
     });
 
      /** top wineers 大赢家 **/
