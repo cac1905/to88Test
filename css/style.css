@@ -334,9 +334,17 @@ HEADER
 	font-family: 'DFPWaWa-B5',dfpwawaw5-gbregular;
 	font-size: 20px;
 }
-.nav .home a{
-	font-size: 0;
+.nav li:first-child a{
+    font-size: 0;
 } 
+.nav li:active,.nav li:focus,.li-active {
+    background-color: #666; 
+    color: #ff0000;
+}
+.current {
+    background-color: #666; 
+    color: #ff0000; 
+}
 /*.nav li.active {
 	background-color: #666; 
 	color: #ff0000;
@@ -553,11 +561,11 @@ HEADER
 }
 
 #but_up {
-	background: url(../images/upDown.gif) no-repeat 0 -7px;
+	background: url(../images/upDown.gif) no-repeat 0 0;
 }
 
 #but_down {
-	background: url(../images/upDown.gif) no-repeat 0 0;
+	background: url(../images/upDown.gif) no-repeat 0 -7px;
 }
 
 /***************end of header**********************/
