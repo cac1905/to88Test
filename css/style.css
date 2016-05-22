@@ -941,7 +941,7 @@ center of promo.html
 .promo .tabs {
 	margin: 0px;
 	width: 100%;
-	overflow: hidden;
+	overflow: visible;
 	display: table;
 	position: relative;
 	background: #979797;
@@ -984,21 +984,29 @@ center of promo.html
 .promo .tabs.active:after {
    opacity: 1;
    bottom: -9px;
-} 
+}  
+.filter ul li a:after,
 .promo .tabs li a:after {
-    background: url(../images/nav-arrow.png) top center no-repeat;  
+	background: url(../images/nav-arrow.png) top center no-repeat;  
     height: 9px;
     left: 50%;
     margin-left: -9px;
     position: absolute;
     width: 18px; 
-    bottom: -10px;
+    bottom: 0;
     z-index: 1;
     transition: all 0.3s linear; 
     clear: both;
     content: '';
     display: block;
+    opacity: 0;
+}
+.filter ul li:hover a:after,
+.filter ul .rem_left1 a:after,
+.promo .tabs .current a:after,
+.promo .tabs li:hover a:after {
     opacity: 100;
+    bottom: -9px;
 }
 .promo .tabs_item {
 	padding: 15px 0px;
@@ -1147,20 +1155,7 @@ center of slot.html
 .sanjiao {
 	bottom: 0;
 	right: 50%;
-}
- 
-.rem_left1 .sanjiao {
-    position: absolute;
-    bottom: -10px;
-    right: 40%;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #cf271e; 
-    z-index: 5;
-    transition: all 0.3s linear;
-}
+} 
 .filter ul li {
 	position: relative;
 	height: 35px;
@@ -1179,24 +1174,20 @@ center of slot.html
 .filter ul li.rem_left {
 	color: #fff;
 	background: #cf271e;
-}
-.filter ul li.rem_left .sanjiao {
-    position: absolute;
-    bottom: -10px;
-    right: 40%;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #cf271e; 
-    z-index: 5;
-    transition: all 0.2s linear;
-}
+} 
 .rem_left1 {
 	color: #fff;
 	background: #cf271e;
 }
-
+.filter ul li a {
+	color: #000;
+}
+.rem_left1 a {
+	color: #fff!important;
+} 
+.filter ul li:hover a {
+	color: #fff;
+}
 .gameList {
 	width: 100%; 
 	padding: 0 30px;   
