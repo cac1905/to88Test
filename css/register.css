@@ -134,16 +134,15 @@ em,i {
 }
  
 /*btn*/
- 
-.btn-blue {
-    background-color: #1997d7;
-    border-color: #1997d7;
+ .btn-blue {
+    background-color: #ff0000;
+    border-color: #ff0000;
     color: #fff;
 }
 
 .btn-blue:hover,.btn-blue:active:hover,.btn-blue:focus {
-    background-color: #1078AC;
-    border-color: #127db3;
+    background-color: #E40606;
+    border-color: #E40606;
     color: #fff;
 }
  
@@ -352,11 +351,11 @@ fieldset[disabled] .btn.active {
 }
 
 .step .on .lbg-txt {
-    color: #1a97d7;
+    color: #ff0000;
 }
 
 .step .on .line_bg,.step .on .num em {
-    background: #1a97d7
+    background: #ff0000;
 }
 /*out*/
 .m-sPopBg {
