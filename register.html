@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+<meta name="viewport" content="width=device-width,maximum-scale=1"> 
 
 <title>通盈娱乐</title> 
 <link rel="stylesheet" href="css/style.css"> 
@@ -100,115 +100,179 @@
 	    </div>
     </header>
     <main class="content"> 
-    	 <div class="register_content">
-    
-	        <ul class="step_ul step1 clear">
-	            <li class="li1">01、填写资料</li>
-	            <li class="li2">02、完成注册</li>
-	        </ul>
-	         
-	         <form name="registerForm" id='registerForm' action="register/ldo" method="post" style="padding:60px 40px 88px 40px;font-family:Microsoft Yahei">
-	            <div class="div_form clear ">
-	                <label><span>*</span>用户名：</label>
-	                <div class="input_div input_div1">
-	                    <input id="username" name="username" type="text" placeholder="用户名由6~12位小写英文a~z或数字组成。" maxlength="12">
-	                    <span></span>
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label><span>*</span>请创建一个密码：</label>
-	                <div class="input_div input_div2">
-	                    <input id="password1" name="userpass" type="password" placeholder="最少 8 个字符，区分大小写" maxlength="32">
-	                    <span></span>
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label><span>*</span>重新输入密码：</label>
-	                <div class="input_div input_div3">
-	                    <input id="password2" name="userpass2" type="password" placeholder="再次输入密码" maxlength="32">
-	                    <span></span>
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label><span>*</span>真实姓名：</label>
-	                <div class="input_div input_div4" >
-	                    <input id="actualname" name="actualname"  type="text" placeholder="必须与提款账户姓名一致才能提款，请务必填写一致" maxlength="64">
-	                    <span></span>
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label><span>*</span>手机号：</label>
-	                <div class="input_div input_div5" >
-	                    <input id="phonenumber" name="phonenumber"  type="text" placeholder="手机号码用户获取重要通知，请务必填写真实信息" maxlength="64">
-	                    <span></span>
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label><span>*</span>输入验证码：</label>
-	                <div class="input_div input_div6">
-	                    <input id="varcode" name="vercode" type="text" maxlength="2" placeholder="右侧验证码">
-	                    
-	                    <a class="change" href="javascript:;">点击换一张</a>
-	                    <span></span>
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label>邮箱帐号：</label>
-	                <div class="input_div input_div7" >
-	                    <input id="mail" name="useremail"  type="text" placeholder="请填写正确的邮箱，以便接收账号激活邮件" maxlength="64">
-	                    <span></span>
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label>优惠代码：</label>
-	                <div class="input_div input_div8">
-	                    <input id="promocode" name="promocode" type="text" maxlength="2">
-	                    <!-- 
-	                    <a class="change" href="javascript:;">点击换一张</a>
-	                    <span></span> -->
-	                </div>
-	            </div>
-	            <div class="div_form clear ">
-	                <label></label>
-	                <div class="input_div check2 input_div9" data="0" id="agreement">
-	                    我确认我的法定年龄，已阅读并愿意遵守通盈相关的<a href="" target="_blank">规则与条款</a>和隐私策略。
-	                    <span></span>
-	                </div>
-	            </div>
-	            
-	            <div class="div_form clear ">
-	                <label></label>
-	                <div class="input_div">
-	                    <input id="btn" class="btn" type="button" value="注册" />
-	                </div>
-	            </div>
-	            
-	        </form>
-	        
-	        <div class="reg_login">
-	            <p>已有帐号？</p>
-	            <a class="btn2" href="login">登录</a>
-	        </div>
-	        <div class="bg"></div>
-	    </div>
-	</main>
-	<!-- right silder live help -->
-	 <div id="sideRight">
-	    <div class="info"> 
-	        <h2><a href="http://www.sideRight.com/service">在线客服</a></h2>
-	        <p>QQ：987654321</p>
-	    </div>
-	</div>
-	<!-- right silder mobile games -->
-	 <div id="sideRight2">
-	    <div class="info"> 
-	        <h2><a href="http://www.sideRight.com/service">在线客服</a></h2>
-	        <p>QQ：987654321</p>
-	    </div>
-	</div>
-    
+    	 <div class="login-box f-mt10 f-pb50">
+		    <div class="main bgf">    
+		        <div class="reg-box-pan display-inline">  
+		            <div class="step">          
+		                <ul>
+		                    <li class="col-xs-4 on">
+		                        <span class="num"><em class="f-r5"></em><i>1</i></span>                 
+		                        <span class="line_bg lbg-r"></span>
+		                        <p class="lbg-txt">填写账户信息</p>
+		                    </li>
+		                    <li class="col-xs-4">
+		                        <span class="num"><em class="f-r5"></em><i>2</i></span>
+		                        <span class="line_bg lbg-l"></span>
+		                        <span class="line_bg lbg-r"></span>
+		                        <p class="lbg-txt">信息验证</p>
+		                    </li>
+		                    <li class="col-xs-4">
+		                        <span class="num"><em class="f-r5"></em><i>3</i></span>
+		                        <span class="line_bg lbg-l"></span>
+		                        <p class="lbg-txt">注册成功</p>
+		                    </li>
+		                </ul>
+		            </div>
+		            <div class="reg-box" id="verifyCheck" style="margin-top:20px;">
+		                <div class="part1">                 
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>用户名：</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="text" maxlength="20" class="txt03 f-r3 required" tabindex="1" data-valid="isNonEmpty||between:3-20||isUname" data-error="用户名不能为空||用户名长度3-20位||只能输入中文、字母、数字、下划线，且以中文或字母开头" id="adminNo">                            <span class="ie8 icon-close close hide"></span>
+		                            <label class="icon-sucessfill blank hide"></label>
+		                            <label class="focus"><span>3-20位，中文、字母、数字、下划线的组合，以中文或字母开头</span></label>
+		                            <label class="focus valid"></label>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>密码：</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="password" id="password" maxlength="20" class="txt03 f-r3 required" tabindex="2" style="ime-mode:disabled;" onpaste="return  false" autocomplete="off" data-valid="isNonEmpty||between:6-20||level:2" data-error="密码不能为空||密码长度6-20位||该密码太简单，有被盗风险，建议字母+数字的组合"> 
+		                            <span class="ie8 icon-close close hide" style="right:55px"></span>
+		                            <span class="showpwd" data-eye="password" title="切换密码可见状态"></span>                        
+		                            <label class="icon-sucessfill blank hide"></label>
+		                            <label class="focus">6-20位英文（区分大小写）、数字、字符的组合</label>
+		                            <label class="focus valid"></label>
+		                            <span class="clearfix"></span>
+		                            <label class="strength">
+		                                <span class="f-fl f-size12">安全程度：</span>
+		                                <b><i>弱</i><i>中</i><i>强</i></b>
+		                            </label>    
+		                        </div>
+		                    </div>
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>确认密码：</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="password" maxlength="20" class="txt03 f-r3 required" tabindex="3" style="ime-mode:disabled;" onpaste="return  false" autocomplete="off" data-valid="isNonEmpty||between:6-16||isRepeat:password" data-error="密码不能为空||密码长度6-16位||两次密码输入不一致" id="rePassword">
+		                            <span class="ie8 icon-close close hide" style="right:55px"></span>
+		                            <span class="showpwd" data-eye="rePassword"></span>
+		                            <label class="icon-sucessfill blank hide"></label>
+		                            <label class="focus">请再输入一遍上面的密码</label> 
+		                            <label class="focus valid"></label>                          
+		                        </div>
+		                    </div>
 
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>真实姓名：</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="text" maxlength="10" class="txt03 f-r3 required" tabindex="4" data-valid="isNonEmpty||between:2-10||isZh" data-error="真实姓名不能为空||真实姓名长度2-10位||只能输入中文" id="adminNo">   
+		                            <span class="ie8 icon-close close hide"></span>                         
+		                            <label class="icon-sucessfill blank hide"></label>
+		                            <label class="focus">必须与提款账户姓名一致才能提款，务必填写一致</label>
+		                            <label class="focus valid"></label>
+		                        </div>
+		                    </div>
+
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>手机号：</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="text" maxlength="12" class="txt03 f-r3 required" keycodes="tel" tabindex="5" data-valid="isNonEmpty" data-error="手机号码不能为空||手机号码格式不正确" maxlength="11" id="phone"> 
+		                            <span class="ie8 icon-close close hide"></span>                           
+		                            <label class="icon-sucessfill blank hide"></label>
+		                            <label class="focus">手机号码用户获取重要通知，请务必填写真实信息</label>
+		                            <label class="focus valid"></label>
+		                        </div>
+		                    </div>
+
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>验证码：</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="text" maxlength="4" class="txt03 f-r3 f-fl required" tabindex="6" style="width:167px" id="randCode" data-valid="isNonEmpty" data-error="验证码不能为空"> 
+		                            <span class="ie8 icon-close close hide"></span>
+		                            <label class="f-size12 c-999 f-fl f-pl10">
+		                                <img src="images/yzm.jpg">                               
+		                            </label>                        
+		                            <label class="icon-sucessfill blank hide" style="left:380px"></label>
+		                            <label class="focusa">看不清？<a href="javascript:;" class="c-blue">换一张</a></label>   
+		                            <label class="focus valid" style="left:370px"></label>                        
+		                        </div>
+		                    </div>
+		                   
+		                   <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04"></b>邮箱</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="text" maxlength="20" class="txt03 f-r3 f-fl" tabindex="7" data-valid="isNonEmpty||isEmail" data-error="邮箱格式不正确" id="emial">  
+		                            <span class="ie8 icon-close close hide"></span>                           
+		                            <label class="icon-sucessfill blank hide"></label>
+		                            <!-- <label class="focus">例如：1234567@to88.com</label>
+		                            <label class="focus"></label>  -->                       
+		                        </div>
+		                    </div>
+
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04"></b>优惠代码</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="text" maxlength="16" class="txt03 f-r3 f-fl" tabindex="8" id="promocode" data-error="">  
+		                            <label class="focus"></label>                        
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="part3" style="display:block">
+		                    <!-- <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl"><b class="ftx04">*</b>身份证号：</span>    
+		                        <div class="f-fl item-ifo">
+		                            <input type="text" class="txt03 f-r3 required" tabindex="2" data-valid="isNonEmpty||isCard" data-error="身份证号不能为空||身份证号码格式不正确" maxlength="18" id="phone">    
+		                            <span class="ie8 icon-close close hide"></span>                        
+		                            <label class="icon-sucessfill blank hide"></label>
+		                            <label class="focus">请填写18位有效的手机号码</label>
+		                            <label class="focus valid"></label>
+		                        </div>
+		                    </div> -->
+
+		                     <div class="item col-xs-12" style="height:auto">
+		                        <span class="intelligent-label f-fl">&nbsp;</span>  
+		                        <p class="f-size14 required rule" data-valid="isChecked" data-error="请先同意条款"> 
+		                            <input type="checkbox" checked="">我确认我的法定年龄，已阅读并愿意遵守通盈相关的&nbsp;<a href="http://www.to88.cc/html/help/conditions.html" target="_blank">规则与条款</a>&nbsp;和隐私策略。
+		                        </p>                       
+		                        <label class="focus valid"></label> 
+		                    </div> 
+
+		                    <div class="item col-xs-12">
+		                        <span class="intelligent-label f-fl">&nbsp;</span>    
+		                        <div class="f-fl item-ifo">
+		                           <a href="javascript:;" class="btn btn-blue f-r3" id="btn_part3">确认注册</a>                         
+		                        </div>
+		                    </div>
+		                </div>  
+		                <div class="part4 text-center" style="display:none">
+		                    <h3>恭喜cz82465，您已注册成功，现在开始您的在通盈的快乐之旅吧！</h3>
+		                    <p class="c-666 f-mt30 f-mb50">页面将在 <strong id="times" class="f-size18">5</strong> 秒钟后，跳转到 <a href="index.html" class="c-blue">通盈首页</a></p>
+		                </div>          
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</main>
+ 
 	<footer>
+		<div class="sideInfo">
+			<!-- right silder live help -->
+			 <div id="sideRight">
+			    <div class="info"> 
+			        <h2><a href="http://www.sideRight.com/service">在线客服</a></h2>
+			        <p>QQ：987654321</p>
+			    </div>
+			</div>
+			<!-- right silder mobile games -->
+			 <div id="sideRight2">
+			    <div class="info"> 
+			        <h2><a href="http://www.sideRight.com/service">在线客服</a></h2>
+			        <p>QQ：987654321</p>
+			    </div>
+			</div>
+		</div>
 	    <div class="footer-nav">
 	    	<div class="main"><span class="oldMan"><img src="images/oldMan.png" alt=""></span></div>
 	    	<ul class="main clearfix">
@@ -323,6 +387,7 @@
 <script type="text/javascript" src="js/myScript.js"></script>
 <script type="text/javascript" src="js/jackpotMoney.js"></script>
 <script type="text/javascript" src="js/jq_scroll.js"></script> 
+<script src="js/register.js"></script>
  <script>
 	$(function(){
 		$('.nav').posfixed({
@@ -333,131 +398,26 @@
 		}); 
 	}); 
 </script>
-
-<script src="js/jquery.form.js" type="text/javascript"></script>
-<script src="js/json.parse.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(function(){
-$(".btn").click(function(){
-            var agreenMent=$("#agreement").attr("data");
-            
-            //alert(agreenMent);0
-            var userName= $("#username").val();
-            var userPass= $("#password1").val();
-            var userPass2=$("#password2").val();
-            var userEmail=$("#mail").val();
-            var actualName =$("#actualname").val();
-            var phoneNumber =$("#phonenumber").val();
-            var vercode =$("#varcode").val();
-            var promoCode =$("#promocode").val();
-            
-            userPass=$.trim(userPass);
-            userPass2=$.trim(userPass2);
-            
-            $(".input_div1 span,.input_div2 span,.input_div3 span,.input_div4 span,.input_div5 span,.input_div6 span,.input_div7 span,.input_div8,.input_div9 span span").html("");
-            $(".btn").val('注册中...').attr('disabled','disabled');
-            
-            if(!isRegisterUserName(userName)){
-                $(".input_div1 span").html('<img src="themes/images/v3/text_error.png"><font color=red>账户名格式不正确!</font>');
-                $("#username").focus();
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            }else if(userPass.length <8){
-                $(".input_div2 span").html('<img src="themes/images/v3/text_error.png"><font color=red>密码格式不正确!</font>');
-                $("#password1").focus();
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            }else if(userPass != userPass2){
-                $(".input_div3 span").html('<img src="themes/images/v3/text_error.png"><font color=red>两次输入的密码不一致!</font>');
-                $("#password2").focus();
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            } else if(actualName ==''){
-                $(".input_div4 span").html('<img src="themes/images/v3/text_error.png"><font color=red>输入真实姓名</font>').fadeIn();
-                $("#varcode").focus();
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            }else if(phoneNumber.length <10){
-                $(".input_div5 span").html('<img src="themes/images/v3/text_error.png"><font color=red>输入正确的手机号</font>').fadeIn();
-                $("#varcode").focus();
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            } else if(vercode ==''){
-                $(".input_div6 span").html('<img src="themes/images/v3/text_error.png"><font color=red>输入图片验证码</font>').fadeIn();
-                $("#varcode").focus();
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            }/*else if(!isEmail(userEmail)){
-                $(".input_div7 span").html('<img src="themes/images/v3/text_error.png"><font color=red>邮箱格式不正确!</font>');
-                $("#mail").focus();
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            }*/else if(agreenMent != '1'){
-                //$(".agreenment-tips").html('请先同意用户条款!').fadeIn();
-                $(".input_div9 span").html('<img src="themes/images/v3/text_error.png"><font color=red>请先同意用户条款!</font>');
-                $(".btn").val('注册').removeAttr('disabled');
-                return false;
-            }else{
-                $("#registerForm").ajaxSubmit(function(e){
-                    var obj=json_parse(e);
-                    var code=obj.code;
-                    var info = '<img src="themes/images/v3/text_error.png"><font color=red>'+obj.info+"</font>";
-                    if(code=='-1' || code=='-5'){
-                        $(".input_div1 span").html(info);
-                        $("#username").focus();
-                    }else if(code =='-2' || code == '-4'){
-                        $(".input_div2 span").html(info);
-                        $("#password1").focus();
-                    }else if(code =='-3' || code == '-7'){
-                        $(".input_div2 span").html(info);
-                        $("#mail").focus();
-                    }else if(code == '-8'){
-                        $(".input_div6 span").html(info);                           
-                        $("#varcode").focus();
-                    }else if(code == '-99'){
-                        $(".input_div3 span").html(info);                           
-                        $("#mail").focus();
-                    }else if(code == '1'){
-                        //alert('恭喜您，注册成功!');
-                        //window.location.href='register/success';
-                        window.location.href=obj.acturl;
-                    }
-                    //flushCode();
-                    $(".change").click();
-                    $(".btn").val('注册').removeAttr('disabled');
-                })
+ <script>
+$(function(){   
+    //注册提交按钮
+    $("#btn_part3").click(function(){           
+        if(!verifyCheck._click()) return;
+        $(".part3").hide();
+        $(".part4").show();
+        $(".step li").eq(1).addClass("on");
+        $(".step li").eq(2).addClass("on");
+        countdown({
+            maxTime:5,
+            ing:function(c){
+                $("#times").text(c);
+            },
+            after:function(){
+                window.location.href="index.html";      
             }
-                
-        })
-    
-    $(".change").click(function(){
-        $("#imgcode").attr('src','vercode');
-    })
-    
-    $('.check2').click(function(){
-        var rel = $('#agreement').attr("data");
-        //alert(rel);
-        if(rel =='1'){
-            $('#agreement').attr("data","0");
-        }else{
-            $('#agreement').attr("data","1");
-        }
-        $('.check2').toggleClass("check1");
-    });
-    
+        });     
+    }); 
 });
-
-function isRegisterUserName(s){  
-    var patrn=/^[a-zA-Z0-9]{1}([a-zA-Z0-9]|[._]){5,19}$/;  
-    if (!patrn.exec(s)) return false
-    return true
-}
-
-function isEmail(email){
-       var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-       if(!myreg.test(email)) return false;
-        return true; 
- }
 </script>
 
   </body>
