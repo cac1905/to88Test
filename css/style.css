@@ -74,6 +74,11 @@ a {
 /******************
 HEADER
 ******************/
+.wrapper {
+	min-width: 700px;
+	background-color: #cf271e; 
+	width: 100%;
+}
 .header {
 	background-color: #cf271e; 
 	height: 80px; 
