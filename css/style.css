@@ -1417,11 +1417,14 @@ FOOTER
 	width: 100%;
 	min-width: 960px;
 }
+.oldMan-area {
+	position: relative;
+}
 .footer-nav .oldMan {
 	position: absolute;
 	top: -125px;
-	z-index: 2;
-    left: 0;
+	z-index: 2; 
+    left: -180px;
 } 
 .footer-nav ul {
 	margin: 0 auto;
