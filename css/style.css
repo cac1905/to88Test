@@ -969,7 +969,10 @@ center of promo.html
     text-align: center; 
 	overflow: visible;
     z-index: 2;
-    transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+	-webkit-transition: all 0.3s linear; 
+	-moz-transition: all 0.3s linear; 
+	-o-transition: all 0.3s linear; 
 }
 .promo .tabs li:first-child a {
 	margin-left: 0;
@@ -996,6 +999,9 @@ center of promo.html
     bottom: 0;
     z-index: 1;
     transition: all 0.3s linear; 
+	-webkit-transition: all 0.3s linear; 
+	-moz-transition: all 0.3s linear; 
+	-o-transition: all 0.3s linear;  
     clear: both;
     content: '';
     display: block;
@@ -1072,8 +1078,6 @@ center of promo.html
    50%   { opacity: 1;filter: alpha(opacity=100); }
    100% { opacity: 0;filter: alpha(opacity=0); }
 }
-
-
  
 .tab_content .promo-info { 
 	background: #efefef;
@@ -1082,6 +1086,16 @@ center of promo.html
 }
 .tab_content .promoBox {
 	margin-bottom: 10px;
+}
+.promoBox:hover{
+	box-shadow:0px 4px 8px #ff0000;
+	-webkit-box-shadow:0px 4px 8px #ff0000;
+	-moz-box-shadow:0px 4px 8px #ff0000;
+	-o-box-shadow:0px 4px 8px #ff0000;
+	transition: all 0.3s linear; 
+	-webkit-transition: all 0.3s linear; 
+	-moz-transition: all 0.3s linear; 
+	-o-transition: all 0.3s linear; 
 }
 .promo-info .txt  {
 	font: 14px/1.6 'Microsoft Yahei';
@@ -1197,7 +1211,10 @@ center of slot.html
 	float: left;
 	padding: 0 20px;
 	font-size: 14px;
-    transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+	-webkit-transition: all 0.3s linear; 
+	-moz-transition: all 0.3s linear; 
+	-o-transition: all 0.3s linear; 
     margin-left: 1px;
 }
 .filter ul li:first-child {
@@ -1388,7 +1405,10 @@ width: 50%;
    font: 29px Arial;
    padding-bottom: 5px;
 
-   transition: all 0.3s linear;
+   transition: all 0.3s linear; 
+	-webkit-transition: all 0.3s linear; 
+	-moz-transition: all 0.3s linear; 
+	-o-transition: all 0.3s linear; 
 }
 
 .main-game .fl img {
@@ -1565,6 +1585,9 @@ p#back-to-top a span{
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
@@ -1603,6 +1626,9 @@ p#back-to-top a span{
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
